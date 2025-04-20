@@ -8,14 +8,33 @@ const nextConfig = {
   },
   webpack: (config) => {
     // Skip CSS processing completely
-    config.module.rules.forEach(rule => {
+    // Replace ALL CSS rules with a no-op module
+    config.module.rules = config.module.rules.map(rule => {
       if (rule.oneOf) {
-        rule.oneOf.forEach(oneOf => {
-          if (oneOf.test && oneOf.test.toString().includes('css')) {
-            oneOf.use = [{ loader: 'null-loader' }];
-          }
-        });
+        return {
+          ...rule,
+          oneOf: rule.oneOf.map(oneOf => {
+            if (oneOf.test && oneOf.test.toString().includes('css')) {
+              return {
+                ...oneOf,
+                use: [{
+                  loader: 'null-loader'
+                }]
+              };
+            }
+            return oneOf;
+          })
+        };
       }
+      return rule;
+    });
+
+    // Add a rule at the beginning to short-circuit all CSS files
+    config.module.rules.unshift({
+      test: /\.css$/,
+      use: {
+        loader: 'null-loader',
+      },
     });
     return config;
   },
