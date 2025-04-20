@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+// import { Inter } from 'next/font/google' // removed to disable optimized font loading
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingCTA } from "@/components/floating-cta";
 
-const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
+// const inter = Inter({ subsets: ['latin'] }) // removed optimized font use
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ["latin"],
   variable: '--font-space-grotesk',
@@ -76,7 +77,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
+      <body className={`${spaceGrotesk.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col min-h-screen">
             <Header />
