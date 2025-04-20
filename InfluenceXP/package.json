@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "framer-motion": "^12.7.4"
+  },
+  "devDependencies": {
+    "next-sitemap": "^4.2.3"
+  }
+}
