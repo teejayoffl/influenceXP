@@ -1,0 +1,19 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background with gradient -->
+  <rect width="1024" height="1024" rx="224" fill="url(#paint0_linear)" />
+  
+  <!-- Stylized XP icon showing growth -->
+  <path d="M312 724L422 562L312 400H412L478 500L544 400H644L534 562L644 724H544L478 624L412 724H312Z" fill="white"/>
+  <path d="M684 724V640H584V560H684V508C684 494.7 688.7 484 698 476C707.3 468 718.7 464 732 464H824V544H764C757.3 544 754 547.3 754 554V560H824V640H754V724H684Z" fill="white"/>
+  
+  <!-- Growth arrow elements -->
+  <path d="M688 330C688 323.373 693.373 318 700 318H770C776.627 318 782 323.373 782 330V400C782 406.627 776.627 412 770 412C763.373 412 758 406.627 758 400V354.83L656.93 455.9C652.317 460.513 644.903 460.513 640.29 455.9C635.677 451.287 635.677 443.873 640.29 439.26L741.17 338.38H696C689.373 338.38 684 333.007 684 326.38C684 319.753 689.373 314.38 696 314.38" fill="white"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B82F6" />
+      <stop offset="1" stop-color="#14B8A6" />
+    </linearGradient>
+  </defs>
+</svg> 

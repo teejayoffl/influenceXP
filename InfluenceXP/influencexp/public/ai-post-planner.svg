@@ -1,0 +1,31 @@
+<svg width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#F3F4F6"/>
+  <rect x="50" y="50" width="400" height="200" rx="10" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Editor Header -->
+  <rect x="50" y="50" width="400" height="40" rx="10" fill="#3B82F6" stroke="#2563EB" stroke-width="2"/>
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white">AI Post Planning Assistant</text>
+  
+  <!-- Content Area -->
+  <rect x="70" y="110" width="360" height="120" rx="5" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Text Lines -->
+  <rect x="80" y="120" width="340" height="10" rx="2" fill="#E5E7EB"/>
+  <rect x="80" y="140" width="280" height="10" rx="2" fill="#E5E7EB"/>
+  <rect x="80" y="160" height="10" width="320" rx="2" fill="#E5E7EB"/>
+  <rect x="80" y="180" height="10" width="200" rx="2" fill="#E5E7EB"/>
+  
+  <!-- Suggestion Pills -->
+  <rect x="70" y="240" width="80" height="25" rx="12.5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <text x="85" y="257" font-family="Arial" font-size="12" fill="#3B82F6">Engaging</text>
+  
+  <rect x="160" y="240" width="100" height="25" rx="12.5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <text x="175" y="257" font-family="Arial" font-size="12" fill="#3B82F6">Professional</text>
+  
+  <rect x="270" y="240" width="90" height="25" rx="12.5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <text x="285" y="257" font-family="Arial" font-size="12" fill="#3B82F6">Question</text>
+
+  <!-- AI Icon -->
+  <circle cx="420" cy="75" r="15" fill="#DBEAFE"/>
+  <text x="414" y="80" font-family="Arial" font-size="16" fill="#3B82F6">AI</text>
+</svg> 

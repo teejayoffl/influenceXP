@@ -1,0 +1,50 @@
+<svg width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#F3F4F6"/>
+  <rect x="50" y="50" width="400" height="200" rx="10" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Dashboard Header -->
+  <rect x="50" y="50" width="400" height="40" rx="10" fill="#6366F1" stroke="#4F46E5" stroke-width="2"/>
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white">Badge Collection</text>
+  
+  <!-- Badges Grid -->
+  <rect x="70" y="110" width="70" height="70" rx="10" fill="#EEF2FF" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="105" cy="145" r="25" fill="#6366F1"/>
+  <text x="95" y="152" font-family="Arial" font-size="16" font-weight="bold" fill="white">1K</text>
+  <text x="80" y="190" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">1K Followers</text>
+  
+  <rect x="160" y="110" width="70" height="70" rx="10" fill="#EEF2FF" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="195" cy="145" r="25" fill="#6366F1"/>
+  <text x="180" y="152" font-family="Arial" font-size="16" font-weight="bold" fill="white">30d</text>
+  <text x="195" y="190" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">30-Day Streak</text>
+  
+  <rect x="250" y="110" width="70" height="70" rx="10" fill="#EEF2FF" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="285" cy="145" r="25" fill="#6366F1"/>
+  <text x="275" y="152" font-family="Arial" font-size="16" font-weight="bold" fill="white">★5</text>
+  <text x="285" y="190" font-family="Arial" font-size="10" fill="#4B5563" text-anchor="middle">Top Content</text>
+  
+  <rect x="340" y="110" width="70" height="70" rx="10" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 2"/>
+  <circle cx="375" cy="145" r="25" fill="#E5E7EB"/>
+  <text x="369" y="152" font-family="Arial" font-size="16" font-weight="bold" fill="#9CA3AF">?</text>
+  <text x="375" y="190" font-family="Arial" font-size="10" fill="#9CA3AF" text-anchor="middle">Locked</text>
+  
+  <!-- Second Row -->
+  <rect x="70" y="200" width="70" height="70" rx="10" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 2"/>
+  <circle cx="105" cy="235" r="25" fill="#E5E7EB"/>
+  <text x="99" y="242" font-family="Arial" font-size="16" font-weight="bold" fill="#9CA3AF">?</text>
+  <text x="105" y="280" font-family="Arial" font-size="10" fill="#9CA3AF" text-anchor="middle">Locked</text>
+  
+  <rect x="160" y="200" width="70" height="70" rx="10" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 2"/>
+  <circle cx="195" cy="235" r="25" fill="#E5E7EB"/>
+  <text x="189" y="242" font-family="Arial" font-size="16" font-weight="bold" fill="#9CA3AF">?</text>
+  <text x="195" y="280" font-family="Arial" font-size="10" fill="#9CA3AF" text-anchor="middle">Locked</text>
+  
+  <rect x="250" y="200" width="70" height="70" rx="10" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 2"/>
+  <circle cx="285" cy="235" r="25" fill="#E5E7EB"/>
+  <text x="279" y="242" font-family="Arial" font-size="16" font-weight="bold" fill="#9CA3AF">?</text>
+  <text x="285" y="280" font-family="Arial" font-size="10" fill="#9CA3AF" text-anchor="middle">Locked</text>
+  
+  <rect x="340" y="200" width="70" height="70" rx="10" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="4 2"/>
+  <circle cx="375" cy="235" r="25" fill="#E5E7EB"/>
+  <text x="369" y="242" font-family="Arial" font-size="16" font-weight="bold" fill="#9CA3AF">?</text>
+  <text x="375" y="280" font-family="Arial" font-size="10" fill="#9CA3AF" text-anchor="middle">Locked</text>
+</svg> 
