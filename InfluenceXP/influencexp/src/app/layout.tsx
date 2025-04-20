@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import { Inter } from 'next/font/google' // removed to disable optimized font loading
-import "./globals.css";
+// import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -71,6 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="stylesheet" href="/css/tailwind.css" />
+      </head>
       <body className="font-sans">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col min-h-screen">

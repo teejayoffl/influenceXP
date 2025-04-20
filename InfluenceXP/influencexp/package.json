@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "build": "next build",
+    "build:css": "npx tailwindcss -i ./src/app/globals.css -o ./public/css/tailwind.css --minify",
+    "build": "npm run build:css && next build",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
@@ -41,6 +42,8 @@
     "typescript": "^5"
   },
   "optionalDependencies": {
-    "lightningcss-linux-x64-gnu": "^1.29.3"
+    "lightningcss-linux-x64-gnu": "^1.29.3",
+    "@tailwindcss/oxide-linux-x64-gnu": "^4.1.4",
+    "@tailwindcss/oxide-wasm32-wasi": "^4.1.4"
   }
 }
