@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingCTA } from "@/components/floating-cta";
+import { Analytics } from "@vercel/analytics/react";
 
 // const inter = Inter({ subsets: ['latin'] }) // removed optimized font use
 
@@ -86,6 +87,7 @@ export default function RootLayout({
             <div className="noise-texture"></div>
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
