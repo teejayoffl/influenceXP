@@ -5,7 +5,8 @@ import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingCTA } from "@/components/floating-cta";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 // const inter = Inter({ subsets: ['latin'] }) // removed optimized font use
 
@@ -87,7 +88,21 @@ export default function RootLayout({
             <div className="noise-texture"></div>
           </div>
         </ThemeProvider>
-        <Analytics />
+        {/* Vercel Analytics */}
+        <Script id="vercel-analytics" strategy="afterInteractive">
+          {`
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+            window.va('init', { 
+              useBeacon: true,
+              includeNetworkData: true
+            });
+            window.va('event', 'pageview');
+          `}
+        </Script>
+        <Script 
+          src="/_vercel/insights/script.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
