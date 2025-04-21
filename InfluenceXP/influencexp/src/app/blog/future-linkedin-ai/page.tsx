@@ -1,12 +1,10 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 
 // Add metadata for better SEO
-export const metadata = {
+export const metadata: Metadata = {
   title: 'AI LinkedIn Content Creation | Future of LinkedIn Strategy',
   description: 'Discover how AI is transforming LinkedIn content creation with personalized strategies, optimization beyond keywords, and multimedia tools for professional growth.',
   alternates: {

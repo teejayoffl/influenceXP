@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -22,7 +20,11 @@ export const metadata: Metadata = {
   }
 };
 
-export default function BlogPage() {
+// Client component wrapper to handle animations
+"use client";
+
+// Blog page with animations
+function BlogPageClient() {
   // Select the most recent post as featured
   const featuredPost = blogPosts[0];
   const otherPosts = blogPosts.slice(1);
@@ -200,4 +202,9 @@ export default function BlogPage() {
       </div>
     </div>
   );
+}
+
+// Server component wrapper for metadata
+export default function BlogPage() {
+  return <BlogPageClient />;
 } 
