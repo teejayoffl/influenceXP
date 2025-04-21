@@ -79,6 +79,7 @@ export function Hero() {
                       waitlistSection.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
+                  aria-label="Join the InfluenceXP waitlist"
                 >
                   Join the wait-list
                 </Button>
@@ -89,6 +90,7 @@ export function Hero() {
                   <Button 
                     variant="outline" 
                     className="px-8 py-6 h-auto text-lg border-indigo-200 dark:border-indigo-800 hover:bg-indigo-50 dark:hover:bg-indigo-900/20"
+                    aria-label="Learn more about LinkedIn growth platform"
                   >
                     Learn more
                   </Button>
@@ -107,6 +109,7 @@ export function Hero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 70, damping: 20, delay: 0.7 }}
                 style={{ willChange: 'transform, opacity' }}
+                aria-label="InfluenceXP LinkedIn dashboard preview"
               >
                 <div className="h-8 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center px-4">
                   <div className="flex space-x-2">

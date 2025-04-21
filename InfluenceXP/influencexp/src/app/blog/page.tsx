@@ -6,6 +6,21 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import BlogFeaturedPost from '@/components/BlogFeaturedPost';
 import blogPosts from '@/data/blogPosts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "LinkedIn Growth Tips & Strategies | InfluenceXP Blog",
+  description: "Expert insights, practical strategies, and actionable advice to grow your LinkedIn presence and build personal brand influence.",
+  alternates: {
+    canonical: "https://influencexp.com/blog",
+  },
+  openGraph: {
+    title: "LinkedIn Growth Tips & Strategies | InfluenceXP Blog",
+    description: "Expert insights, practical strategies, and actionable advice to grow your LinkedIn presence.",
+    url: "https://influencexp.com/blog",
+    type: "website",
+  }
+};
 
 export default function BlogPage() {
   // Select the most recent post as featured
@@ -22,7 +37,7 @@ export default function BlogPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            InfluenceXP Blog
+            LinkedIn Growth Strategies & Tips
           </motion.h1>
           <motion.p 
             className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
@@ -39,7 +54,7 @@ export default function BlogPage() {
         
         {/* Blog Posts Grid */}
         <div className="mt-16">
-          <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Latest Articles</h2>
+          <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Latest LinkedIn Growth Articles</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherPosts.map((post, index) => {
@@ -161,7 +176,7 @@ export default function BlogPage() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-6 md:mb-0 md:mr-12">
-              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Get the latest insights</h3>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Get LinkedIn Growth Tips</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Subscribe to our newsletter for expert LinkedIn and personal branding strategies delivered to your inbox.
               </p>

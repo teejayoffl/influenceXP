@@ -12,10 +12,10 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
-    default: "InfluenceXP - LinkedIn Growth & Personal Branding",
-    template: "%s | InfluenceXP"
+    default: "LinkedIn Growth Platform | InfluenceXP - Personal Branding",
+    template: "%s | InfluenceXP - LinkedIn Growth"
   },
-  description: "Transform your LinkedIn presence and personal brand with InfluenceXP's strategic insights and tools for professional growth.",
+  description: "InfluenceXP helps professionals grow their LinkedIn presence with gamification, AI-powered content tools, and strategic personal branding insights.",
   keywords: ["LinkedIn growth", "social media dashboard", "professional networking", "LinkedIn analytics", "social media growth", "personal branding", "content strategy"],
   authors: [{ name: "InfluenceXP Team" }],
   category: "Professional Development",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "InfluenceXP - LinkedIn Growth & Personal Branding",
-    description: "Transform your LinkedIn presence and personal brand with strategic insights and tools for professional growth.",
+    title: "LinkedIn Growth Platform | InfluenceXP - Personal Branding",
+    description: "Transform your LinkedIn presence with gamification and AI-powered content tools for professional growth and personal branding.",
     url: "https://influencexp.com",
     siteName: "InfluenceXP",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "InfluenceXP - LinkedIn Growth & Personal Branding"
+        alt: "InfluenceXP LinkedIn Growth Platform Dashboard"
       }
     ],
     locale: "en_US",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "InfluenceXP - LinkedIn Growth & Personal Branding",
-    description: "Transform your LinkedIn presence and personal brand with strategic insights and tools for professional growth.",
+    title: "LinkedIn Growth Platform | InfluenceXP",
+    description: "Transform your LinkedIn presence with gamification and AI-powered content tools for professional growth.",
     images: [
       "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
     ],

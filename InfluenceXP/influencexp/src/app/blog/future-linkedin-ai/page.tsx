@@ -3,6 +3,23 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+// Add metadata for better SEO
+export const metadata = {
+  title: 'AI LinkedIn Content Creation | Future of LinkedIn Strategy',
+  description: 'Discover how AI is transforming LinkedIn content creation with personalized strategies, optimization beyond keywords, and multimedia tools for professional growth.',
+  alternates: {
+    canonical: 'https://influencexp.com/blog/future-linkedin-ai',
+  },
+  openGraph: {
+    title: 'AI LinkedIn Content Creation | Future of LinkedIn Strategy',
+    description: 'How AI is transforming LinkedIn content creation with personalization, optimization, and multimedia tools for professional growth.',
+    url: 'https://influencexp.com/blog/future-linkedin-ai',
+    type: 'article',
+    publishedTime: '2024-06-20T00:00:00Z',
+  }
+};
 
 export default function FutureLinkedInAIBlog() {
   return (
@@ -10,7 +27,7 @@ export default function FutureLinkedInAIBlog() {
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
           <Link href="/blog" className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
             </svg>
             Back to Blog
@@ -19,7 +36,14 @@ export default function FutureLinkedInAIBlog() {
 
         <article className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800">
           <div className="h-64 bg-gradient-to-r from-blue-500 to-teal-500 relative flex items-center justify-center">
-            <span className="text-white text-2xl font-bold">Featured Post Image</span>
+            <Image 
+              src="/blog-images/linkedin-ai-future.jpg" 
+              alt="AI-powered LinkedIn content creation tools showing advanced analytics and automation" 
+              fill
+              className="object-cover"
+              priority
+            />
+            <span className="text-white text-2xl font-bold relative z-10">The Future of LinkedIn with AI</span>
           </div>
           
           <div className="p-8 md:p-12">
@@ -57,7 +81,7 @@ export default function FutureLinkedInAIBlog() {
               
               <h2>Four AI-Powered Trends Reshaping LinkedIn Content</h2>
               
-              <h3>1. Hyper-Personalized Content at Scale</h3>
+              <h3>1. Hyper-Personalized LinkedIn Content at Scale</h3>
               <p>
                 AI is enabling content creators to produce highly personalized content that speaks directly to niche audiences without the traditional tradeoff between personalization and scale. By analyzing vast amounts of data about audience preferences, engagement patterns, and professional interests, AI tools can now help craft messages that feel individually tailored while still reaching thousands of connections.
               </p>
@@ -65,7 +89,7 @@ export default function FutureLinkedInAIBlog() {
                 For example, sales professionals are using AI to customize their outreach based on prospects' recent activity, company announcements, or industry developments. This level of personalization was previously possible only for small, high-touch campaigns, but AI is making it feasible at much larger scales.
               </p>
               
-              <h3>2. Content Optimization Beyond Keywords</h3>
+              <h3>2. LinkedIn Content Optimization Beyond Keywords</h3>
               <p>
                 LinkedIn's algorithm is evolving beyond simple keyword matching to understand context, quality, and relevance. Modern AI tools are similarly advancing to optimize content not just for searchability but for genuine engagement and resonance.
               </p>
@@ -73,7 +97,7 @@ export default function FutureLinkedInAIBlog() {
                 These tools can now suggest structural improvements, tone adjustments, and even content elements that increase the likelihood of comments and meaningful interactions. Rather than simply stuffing posts with trending terms, AI helps craft authentic messages that align with both the creator's voice and the audience's interests.
               </p>
               
-              <h3>3. Multimedia Content Creation</h3>
+              <h3>3. Multimedia LinkedIn Content Creation with AI</h3>
               <p>
                 AI is dramatically lowering the barriers to creating professional-quality multimedia content. Tools that generate custom images, edit videos, or create infographics based on textual input are making visual content creation accessible to professionals without design backgrounds.
               </p>
@@ -81,7 +105,7 @@ export default function FutureLinkedInAIBlog() {
                 This is particularly important on LinkedIn, where posts with visual elements receive 98% more comments and 94% more total engagement than text-only content. AI tools are helping LinkedIn users transform complex ideas into engaging visuals that capture attention in busy feeds.
               </p>
               
-              <h3>4. Content Repurposing and Distribution</h3>
+              <h3>4. Content Repurposing for LinkedIn Growth</h3>
               <p>
                 Creating great content is only half the battle; effective distribution is equally important. AI tools now assist in repurposing content across formats and platforms, suggesting ways to transform a successful post into multiple pieces of content.
               </p>
@@ -89,17 +113,17 @@ export default function FutureLinkedInAIBlog() {
                 For example, a well-performing article might be automatically condensed into a carousel, broken down into a series of short-form posts, or adapted into a script for a video. This maximizes the return on the initial content investment while reaching audience members who prefer different content formats.
               </p>
               
-              <h2>Challenges and Ethical Considerations</h2>
+              <h2>Challenges and Ethical Considerations for LinkedIn AI</h2>
               <p>
                 Despite these advances, AI-powered content creation on LinkedIn comes with significant challenges:
               </p>
               
-              <h3>Maintaining Authenticity</h3>
+              <h3>Maintaining Authenticity on LinkedIn</h3>
               <p>
                 As AI-generated content becomes more prevalent, the risk of LinkedIn feeds becoming homogenized increases. The most successful professionals will be those who use AI to amplify their authentic voice rather than replace it. The goal should be using AI as a tool to enhance human creativity, not substitute for it.
               </p>
               
-              <h3>Transparency and Disclosure</h3>
+              <h3>Transparency and Disclosure in AI-Assisted LinkedIn Content</h3>
               <p>
                 The question of when and how to disclose AI assistance in content creation remains unresolved. While some professionals openly acknowledge using AI tools, others integrate them silently into their workflows. As these tools become more sophisticated, LinkedIn may need to establish clearer guidelines around AI disclosures.
               </p>
